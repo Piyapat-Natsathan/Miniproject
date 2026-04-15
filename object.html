@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>รายชื่่อนักศึกษา</h4>
+    <button onclick="showStudents()">แสดงรายชื่อ</button>
+    <p id="studensobject"></p>
+
+    <h4>เพิ่มนักศึกษาใหม่</h4>
+    <label for="name">ชื่อ</label> <br>
+    <input type="text" id="name"> <br>
+
+    <label for="age">อายุ</label> <br>
+    <input type="text" id="age"> <br> <br>
+
+    <label for="major">สาขา</label>
+    <select  id="major">
+        <option value="IT">IT</option>
+        <option value="CS">CS</option>
+        <option value="MKT">MKT</option>
+    </select> <br> <br>
+    <button onclick="addStudent()">เพิ่มข้อมูล</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
