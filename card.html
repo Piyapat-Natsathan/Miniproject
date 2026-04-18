@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            background-color: beige;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:  20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* ลอยขึ้นเมื่อชี้ */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: 0.3s; /* animation ให้นุ่มนวล */
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>🎮 เกม</h3>
+            <p>ชอบเล่นเกม RPG</p>
+        </div>
+
+        <div class="card">
+            <h3>🎵 เพลง</h3>
+            <p>ชอบฟังเพลง จีน</p>
+        </div>
+
+        <div class="card">
+            <h3>📚 การ์ตูน</h3>
+            <p>ชอบ E-venture</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

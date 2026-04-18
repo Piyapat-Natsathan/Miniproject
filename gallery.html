@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .gallery {
+            display: grid;                          /* ใช้ Grid layout */
+            grid-template-columns: repeat(3, 1fr);  /* แบ่ง 3 คอลัมน์เท่าๆ กัน */
+            gap: 20px;                              /* ช่องว่างระหว่าง item */
+            padding: 20px;                          /* ระยะห่างจากขอบหน้า */
+        }
+
+        .item {
+            background-color: white;                /* พื้นหลังสีขาว */
+            padding: 40px;                          /* ระยะห่างภายในการ์ด */
+            text-align: center;                     /* ข้อความอยู่กลาง */
+            border-radius: 10px;                    /* มุมโค้ง */
+            box-shadow: 0 8px 8px rgba(0,0,0,0.1); /* เงาใต้การ์ด */
+            transition: 0.3s;                       /* animation นุ่มนวลเมื่อ hover */
+        }
+
+        .item:hover {
+            transform: translateY(-5px);             /* ลอยขึ้น 5px เมื่อชี้เมาส์ */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* เงาเข้มขึ้นเมื่อ hover */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="item">🎮 เกม</div>
+        <div class="item">🎵 เพลง</div>
+        <div class="item">📚 การ์ตูน</div>
+        <div class="item">⚽ กีฬา</div>
+        <div class="item">🎬 หนัง</div>
+        <div class="item">✈️ ท่องเที่ยว</div>
+    </div>
+</body>
+
+</html>

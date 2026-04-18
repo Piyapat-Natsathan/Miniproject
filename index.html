@@ -5,36 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Introduction</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;      
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        img {
+            border-radius: 50%;
+            display: block;
+            margin: auto;  /*จัดไว้ตรงกลาง*/
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 20px;
+            align-items: center;
+            display: flex;
+        }
+
+        nav a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        nav a:hover {
+            color: #f39c12;  /*เอาเมาส์ไปชี้แล้วเปลี่ยนสี*/
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        h2, ul{
+            text-align: center;
+            list-style-position: inside; /* ให้ bullet อยู่กลางด้วย */
+        }
+
+        div {
+            margin: 20px;
+            border: 1px solid black;
+            padding:  15px;
+            width: 300px;
+        }
+        
+    </style>
 
 </head>
 
 <body>
 
-    
-    
-    <div class="demo"></div>
     <nav>
         <a href="index.html">หน้าแรก</a>
         <a href="menu.html">เมนู</a>
         <a href="register.html">สมัครสมาชิก</a>
     </nav>
 
-    <center>
+
+    <div class="container">
         <h1>แนะนำตัวเอง</h1>
         <img src="images/c63c0d65-dc2c-428b-98dc-9df8b9354786.png" width="150">
         <p>สวัสดี! ผมชื่อ ปิยพัทธ์ นัสฐาน อายุ 20 ปี กำลังศึกษาอยู่ที่มหาวิทยาลัยเกษตศาสตร์กำแพงแสน</p>
         <p>ตอนนี้กำลังจะขึ้นเป็นนักศึกษาปีที่ 4 สาขาเทคโนโลยีสารสนเทศ</p>
-    </center>
 
-    <h2>สิ่งที่ชอบ</h2>
-    <ul>
-        <li>เล่นเกม</li>
-        <li>ฟังเพลง</li>
-        <li>อ่านหนังสือการ์ตูน</li>
-    </ul>
-    <a href="https://github.com/Piyapat-Natsathan">My GitHub</a>
+        <h2>สิ่งที่ชอบ</h2>
+        <ul>
+            <li>เล่นเกม</li>
+            <li>ฟังเพลง</li>
+            <li>อ่านหนังสือการ์ตูน</li>
+        </ul>
+        <a href="https://github.com/Piyapat-Natsathan">My GitHub</a>
 
-    <button onclick="sayHello()">click say hello</button>
+    </div>
 
     <footer>
         <p>© 2025 ร้านลุงโก๊ะ</p>
